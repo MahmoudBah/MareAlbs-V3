@@ -1,0 +1,78 @@
+.pumping-station {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  margin: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.worker-name input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  width: 200px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.home-link {
+  font-size: 1.5rem;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.home-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.main-container {
+  display: flex;
+  flex: 1;
+  gap: 20px;
+}
+
+.left-section {
+  width: 300px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+}
+
+.right-section {
+  flex: 1;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+}
+
+/* Add more specific styles as needed */
+
+@media (max-width: 768px) {
+  .pumping-station {
+    margin: 10px;
+    padding: 15px;
+  }
+  
+  .main-container {
+    flex-direction: column;
+  }
+  
+  .left-section,
+  .right-section {
+    width: 100%;
+  }
+}
